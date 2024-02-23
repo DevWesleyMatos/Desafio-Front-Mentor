@@ -10,55 +10,84 @@
 
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }
 
     body{
+      font-family: Outfit, sans-serif;
+      background-color:  hsl(212, 45%, 89%);
+      min-height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: center;
-      background-color: #cbdad5;
+      font-size: 15px;
     }
     .container{
-      background-color: #fbeec2;
-      margin: 10px 10px 10px;
-      padding: 1rem;
-      border-radius: 15px;
-      max-width: auto;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    .conteudo{
+      background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    margin: 0 1rem;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+
     }
       
     img{
-      width: 300px;
-      height: 300px;
-      border-radius: 15px;
-      margin: auto;
-      display: block;
+    width: 100%;
+    border-radius: 15px;
     }
     .text-container{
-      margin: 3rem;
+      padding: 22px 10px;
+      
+    }
+    .text-container h2{
+      color: hsl(218, 44%, 22%);
+      padding-bottom: 10px;
+    }
+    .text-container p{
+      color: hsl(220, 15%, 55%) ;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    .attribution { 
+      font-size: 11px; text-align: center;
+      padding: 10px 15px;
+     }
+    .attribution a {
+       color: hsl(228, 45%, 44%);
+       }
 
 
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="img-qr">
-      <img src="images/image-qr-code.png" alt="image-qr-code">
-    </div>
+    <div class="conteudo">
+      <div class="img-qr">
+       <img src="images/image-qr-code.png" alt="image-qr-code">
+     </div>
     <div class="text-container">
-    <div class="textnegrito">
-      <p> Improve your front-end<br> skills by building projects</p>
-    </div>
+    
+       <h2> Improve your front-end<br> skills by building projects</h2>
 
     <div>
        <p>Scan the QR code to visit Frontend<br> Mentor and take your coding skills<br> to the next level</p>
      </div>
 
-     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+       <div class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+         Coded by <a href="#">Dev Wesley Matos</a>.
+       </div>
     </div>
     </div>
     </div>
